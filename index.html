@@ -1,62 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Presentación - Mi sitio web</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GNF9cFQ7XQpH2M6I1s2FVv4Kxv+8S3W5PvvvqK08lENkbYzJ6B5AaZ0Yg4gxF4b8" crossorigin="anonymous">
-  <style>
-    body {
-      background: linear-gradient(135deg, #6d92c8 0%, #7adfb0 100%);
-      color: #f8f9fa;
-      min-height: 100vh;
-    }
-    .hero {
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.24);
-      backdrop-filter: blur(10px);
-    }
-    .badge-custom {
-      background-color: rgba(255, 255, 255, 0.2);
-      color: #f8f9fa;
-    }
-    .btn-custom {
-      background-color: #0dcaf0;
-      color: #0f172a;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina web pech catzin</title>
+    <style>
+        /* Variables de color para mantener consistencia */
+        :root {
+            --primary-color: rgb(0, 160, 107);
+            --secondary-color: rgb(0, 160, 109);
+            --text-color: #333333;
+            --bg-color: #f9f9f9;
+            --card-bg: white;
+        }
+
+        /* Estilos generales del cuerpo */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Estilos del encabezado principal */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            font-weight: 300;
+            color: white;
+        }
+
+        /* Contenedor central */
+        .container {
+            max-width: 800px;
+            margin: -2rem auto 2rem auto;
+            padding: 0 1rem;
+            position: relative;
+        }
+
+        /* Estilos de las tarjetas de información */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        /* Estilos de la lista de datos */
+        .info-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .info-list li {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-list strong {
+            color: var(--secondary-color);
+            min-width: 120px;
+            display: inline-block;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container py-5">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="hero rounded-4 p-5 shadow-lg">
-          <div class="text-center mb-4">
-            <span class="badge badge-custom rounded-pill px-3 py-2 mb-3">Bienvenido</span>
-            <h1 class="display-5 fw-bold">Hola, soy Damian</h1>
-            <p class="lead text-white-75">Ingeniero en Sistemas apasionado por la tecnología, el diseño web y las soluciones digitales.</p>
-          </div>
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <div class="p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-25 h-100">
-                <h2 class="h5 text-info">Mi misión</h2>
-                <p>Crear experiencias digitales modernas, funcionales y visualmente atractivas, con un enfoque claro en calidad y profesionalismo.</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-25 h-100">
-                <h2 class="h5 text-success">Mi especialidad</h2>
-                <p>Desarrollo de sitios web, aplicaciones empresariales e integración de sistemas usando herramientas actuales y mejores prácticas.</p>
-              </div>
-            </div>
-          </div>
-          <div class="text-center mt-4">
-            <a href="#" class="btn btn-custom btn-lg shadow-sm">Conoce más sobre mi trabajo</a>
-          </div>
-        </div>
-      </div>
+
+    <header>
+          <h1>Soy Jesús Damian Pech Catzin</h1>
+
+        <p>Futuro Ingeniero en Sistemas Computacionales</p>
+
+    </header>
+
+    <div class="container">
+     
+        <section class="card">
+            <h2>Sobre Mí</h2>
+            <p>- Me encanta el desarrollo Web y Apps Móviles. 💻 📱</p>
+            <p>- Soy un apasionado por la tecnología y la innovación. 🚀</p
+            <p>- Disfruto aprender nuevas habilidades y enfrentar desafíos. 🎯</p>
+            <p>- Me considero una persona creativa, proactiva y con ganas de crecer profesionalmente. 🌱</p>
+            <p>- Me encanta la fotografía 📸</p>
+
+            
+        </section>
+
+        <section class="card">
+            <h2></h2>
+            <ul class="info-list">
+                <li><strong>Instituto:</strong> Instituto Tecnológico Superior de Valladolid</li>
+                <li><strong>URL:</strong> https://www.itsva.edu.mx/</li>
+                <li><strong>Semestre:</strong> 8vo Semestre</li>
+                <li><strong>Carrera:</strong> Ingeniería en Sistemas Computacionales</li>
+            </ul>
+        </section>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-g3P0KxOT1nEShM9R7jGQx8RcB2k4cKfKb0YH8jGrYu4x8s1fQ6mXwK5kvX+g5KXn" crossorigin="anonymous"></script>
+
+    <footer>
+        <p> Jesús Damian Pech Catzin.</p>
+    </footer>
+
 </body>
+
 </html>
